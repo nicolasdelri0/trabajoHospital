@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{16E39FB8-5E23-4187-8F22-11CE8354B90B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TrabajoHospitalFinal11</RootNamespace>
+    <AssemblyName>TrabajoHospitalFinal11</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrativo.cs" />
+    <Compile Include="Empleado.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form10MedicoLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form10MedicoLogin.Designer.cs">
+      <DependentUpon>Form10MedicoLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2Persona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2Persona.Designer.cs">
+      <DependentUpon>Form2Persona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3TipoMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3TipoMedico.Designer.cs">
+      <DependentUpon>Form3TipoMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4Administrativo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4Administrativo.Designer.cs">
+      <DependentUpon>Form4Administrativo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5AsignarTurno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5AsignarTurno.Designer.cs">
+      <DependentUpon>Form5AsignarTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5RemoverTurno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5RemoverTurno.Designer.cs">
+      <DependentUpon>Form5RemoverTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8AltaPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8AltaPaciente.Designer.cs">
+      <DependentUpon>Form8AltaPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form9ObraSocial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form9ObraSocial.Designer.cs">
+      <DependentUpon>Form9ObraSocial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medico.cs" />
+    <Compile Include="ObraSocial.cs" />
+    <Compile Include="Paciente.cs" />
+    <Compile Include="Persona.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipoMedico.cs" />
+    <Compile Include="Turno.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form10MedicoLogin.resx">
+      <DependentUpon>Form10MedicoLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2Persona.resx">
+      <DependentUpon>Form2Persona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3TipoMedico.resx">
+      <DependentUpon>Form3TipoMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4Administrativo.resx">
+      <DependentUpon>Form4Administrativo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5AsignarTurno.resx">
+      <DependentUpon>Form5AsignarTurno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5RemoverTurno.resx">
+      <DependentUpon>Form5RemoverTurno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8AltaPaciente.resx">
+      <DependentUpon>Form8AltaPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form9ObraSocial.resx">
+      <DependentUpon>Form9ObraSocial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
